@@ -1,0 +1,45 @@
+body {background-color: #5297ac;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title2 {
+    margin-top: 50px;
+    margin-left: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#intro {
+    padding: 5px;
+    width: 1000px;
+    margin-top: 20px;
+    margin-left: 130px;
+    border: 1px dashed white;
+    border-radius: 10px;
+    background-color: #baa6a5;
+}
+
+.Zona {
+    background-color: #debfb5;
+    position: absolute;
+    left: 600px;
+}
+#Norte {
+    width: 150px;
+    margin-top: 100px;
+}
+
+#Centro {
+    width: 150px;
+    margin-top: 400px;
+}
+
+#Sur {
+    width: 150px;
+    margin-top: 800px;
+}
+
+/* 
+(a6c6c1 celeste)
+(e6e0cf crema)
+(debfb5 cremarosa)
+(baa6a5 cafeclaro)
