@@ -18,6 +18,13 @@ body {background-color: #5297ac;
     background-color: #baa6a5;
 }
 
+#intro2 {
+    margin-left: 130px;
+    width: 900px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
 .Zona {
     background-color: #debfb5;
     position: absolute;
