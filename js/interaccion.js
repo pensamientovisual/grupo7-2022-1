@@ -9,6 +9,7 @@ $(document).ready(function(){
 
     chil.mouseleave(function(){
         $(this).fadeTo("fast",1);
+        $("#tit").text("Región");
         console.log("tampoco");
     });
 
