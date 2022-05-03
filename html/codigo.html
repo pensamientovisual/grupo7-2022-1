@@ -4,26 +4,43 @@
         <title>
           AGUA EN CHILE
         </title>
-        <metacharset= "utf-8"> 
-        <link rel="stylesheet" href = "diseño.css" type=" text/css">
-        <script type= "text/javascript" src="interraccion.js"> </script> 
-        <script type=" text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href = "../css/diseño.css" type=" text/css">
+        <script type="text/javascript" src ="../js/jquery-3.6.0.min.js"></script>
+        <script type= "text/javascript" src="../js/interaccion.js"> </script> 
+    
     </head>
 
     <body>
-        <h1 id="tit"> Región </h1>
-        <h1 id = "title2"> CONSUMO Y DISPONIBILIDAD DE AGUA EN CHILE</h1>
-        <h3 id = "intro"> El agua es un recurso que esta cada véz más escaso. Nuestro país se encuentra en situación crítica por lo que es responsabilidad de todos colaborar con el ahorro y uso eficiente de esta.
-            A continuación, podrás visitar las distintas regiones demarcadas para ver como se ven afectadas por esta problemática
+        <h1 id = "title1"> CONSUMO Y DISPONIBILIDAD DE AGUA EN CHILE</h1>
+        <h3 id = "intro"> El agua es un recurso cada véz más escaso. Nuestro país se encuentra en situación crítica por lo que es responsabilidad de todos colaborar con el ahorro y uso eficiente de esta.
+            A continuación, podrás visitar las distintas regiones demarcadas para ver como se ven afectadas por esta problemática.
         </h3>
 
-        <div>
-            <h4 id ="Norte" class = "Zona"> Zona Norte</h4>
-            <h4 id ="Centro" class = "Zona"> Zona Centro</h4>
-            <h4 id ="Sur" class = "Zona"> Zona Sur</h4>
+        <div class = "vacio"></div>
+
+        <div id = "zonas" >
+            <p id = "Norte" class="principal" onclick="location.href='#titulonorte'">ZONA NORTE</p>
+            <p id = "Centro" class="principal" onclick="location.href='#titulocentro'">ZONA CENTRO</p>
+            <p id = "Sur" class="principal" onclick="location.href='#titulosur'">ZONA SUR</p>
+        </div>
+    
+
+        <h1 class="titulo" id= "#titulonorte"> Que ocurre en el Norte del país</h1>
+          <div class="botoninicio"><a href="#title1">Volver a la sección principal</a></div>
+
+
+        <h2 class="titulo" id="#titulocentro">Que ocurre en el Centro del país</h1>
+          <div class="botoninicio"><a href="#title1">Volver a la sección principal</a></div>
         </div>
         
-            
+
+        <h3 class="titulo" id="#titulosur">Que ocurre en el Sur del país</h1>
+            <div class="botoninicio"><a href="#title1">Volver a la sección principal</a></div>
+          </div>
+          
+
+
         <div>
             <svg baseprofile="tiny" fill="#debfb5" height="1186" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.2" viewbox="0 0 1000 1186" width="1000" xmlns="http://www.w3.org/2000/svg">
             <g>

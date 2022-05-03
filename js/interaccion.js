@@ -3,7 +3,7 @@ $(document).ready(function(){
     chil.mouseenter(function(){
         var nomreg = $(this).attr("name");
         $("#tit").text(nomreg);
-        $(this).fadeTo("fast",0.5);
+        $(this).fadeTo("fast",0);
         console.log("no");
     });
 
@@ -12,4 +12,8 @@ $(document).ready(function(){
         console.log("tampoco");
     });
 
+    var zona = $(".principal");
+    chil.mouseenter(function(){
+        console.log("no");
+    });
 });
