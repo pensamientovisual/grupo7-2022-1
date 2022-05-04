@@ -25,7 +25,7 @@ ul{
 .principal{
     transition: 0.4s;
   }
-  .principal:hover{
+.principal:hover{
     transform: scale(1.1);
   }
 
