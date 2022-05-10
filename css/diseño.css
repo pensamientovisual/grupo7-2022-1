@@ -80,7 +80,7 @@ ul{
 }
 
 #parte1{
-  display: inline-flex;
+  display:flex;
 }
 
 #mapa{
