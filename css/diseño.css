@@ -80,7 +80,9 @@ ul{
 }
 
 #parte1{
-  display:flex;
+  display:flexbox;
+  align-items: center;
+  
 }
 
 #mapa{
@@ -90,6 +92,17 @@ ul{
     height: 600px;
     margin-bottom: 100px;
 
+}
+
+#leyenda{
+  float: right;
+  margin-top: 1000px;
+  position: absolute;
+}
+
+#gotas{
+  margin-top: 300px;
+  display: left;
 }
 
 .Parrafos{
