@@ -179,7 +179,8 @@
               <div id="chart"></div>
               <p id="infozonas">Desde Arica a Coquimbo se observan los valores más bajos de oferta superficial y subterránea del país, con valores en torno a 0,01 y 1 m3/s. En tanto, los valores más altos de la zona norte están en el sector de Antofagasta, con ofertas referenciales cercanas a los 10 m3/s. Esto equivale al 0,3% del agua disponible en el país.<br>
               <br>
-              <strong>El agua de esta zona es usada, principalmente, por la industria minera.</strong></p>
+              <strong>El <a style="color:#2e4177" target="_blank" href="html/z_norte.html" ><strong>agua</strong></a> de esta zona es usada, principalmente, por la industria minera.</strong></p>
+
               <script id="#graph">
                 var data = [
                 { name: "Agricultura", value: 10 },
@@ -189,8 +190,8 @@
                 ];
                 var text = "";
                 
-                var width = 200;
-                var height = 200;
+                var width = 150;
+                var height = 150;
                 var thickness = 40;
                 var duration = 750;
                 var padding = 10;
@@ -308,6 +309,9 @@
                 
                 keys.exit().remove();
               </script>
+              <div id="Nley">
+                <img src="img/leg_nort.png" width="130">
+              </div>
             </div>
           </ul>
         </details>
@@ -318,9 +322,10 @@
           <ul>
             <div>
               <div id="chart1"></div>
-              <p id="infozonas">Entre las regiones de Valparaíso y el Maule las ofertas referenciales en las cuencas alcanzan como máximo 361 m3/s, lo que equivale al 7% del agua disponible en el país.<br>
+              <p id="infozonas">Entre las regiones de Valparaíso y el Maule las ofertas referenciales en las cuencas alcanzan como mínimo 203 m3/s en la zona de Maule. LLegan a un máximo de 361 m3/s en la VI Región, lo que equivale al 7% del agua disponible en el país.<br>
               <br>
-              <strong> El agua de esta zona es usada, principalmente, por la industria agrícola.</strong></p>
+              <br>
+              <strong> El <a style="color:#2e4177" target="_blank" href="html/z_centro.html" ><strong>agua</strong></a> de esta zona es usada, principalmente, por la industria agrícola.</strong></p>
               <script id="#graph">
                 var data = [
                 { name: "Agricultura", value: 66 },
@@ -330,8 +335,8 @@
                 ];
                 var text = "";
                 
-                var width = 200;
-                var height = 200;
+                var width = 150;
+                var height = 150;
                 var thickness = 40;
                 var duration = 750;
                 var padding = 10;
@@ -434,22 +439,6 @@
                     this._current = i;
                   });
                   
-                let legend = d3
-                  .select("#chart1")
-                  .append("div")
-                  .attr("class", "legend")
-                  .style("margin-top", "30px");
-                  
-                let keys = legend
-                  .selectAll(".key")
-                  .data(data)
-                  .enter()
-                  .append("div")
-                  .attr("class", "key")
-                  .style("display", "flex")
-                  .style("align-items", "center")
-                  .style("margin-right", "20px");
-                  
                 keys
                   .append("div")
                   .attr("class", "symbol")
@@ -465,6 +454,9 @@
                   
                 keys.exit().remove();
               </script>
+              <div id="Cley">
+                <img src="img/leg_cent.png" width="140">
+              </div>
             </div>
           </ul>
         </details>
@@ -476,8 +468,8 @@
               <div>
                 <div id="chart2"></div>
                 <p id="infozonas">Desde la región de Ñuble hasta la de los Lagos solamente se contó con lo señalado en el Balance Nacional del año 1987 careciendo de un estudio actualizado. De acuerdo a esa información encontrada, en esta zona las ofertas referenciales en las cuencas alcanzan 1.064 m3/s, equivalente al 21.7% del agua disponible en el país.<br>
-                  <br>
-                <strong> El agua de esta zona es usada, principalmente, por industrias hidroeléctricas y pecuarias.</strong></p>
+                <br>
+                <strong> El <a style="color:#2e4177" target="_blank" href="html/z_sur.html" ><strong>agua</strong></a> de esta zona es usada, principalmente, por industrias hidroeléctricas y pecuarias.</strong></p>
                 <script id="#graph">
                   var data = [
                   { name: "Agricultura", value: 21.1 },
@@ -487,8 +479,8 @@
                   ];
                   var text = "";
                   
-                  var width = 200;
-                  var height = 200;
+                  var width = 150;
+                  var height = 150;
                   var thickness = 40;
                   var duration = 750;
                   var padding = 10;
@@ -591,22 +583,6 @@
                       this._current = i;
                     });
                   
-                  let legend = d3
-                    .select("#chart2")
-                    .append("div")
-                    .attr("class", "legend")
-                    .style("margin-top", "30px");
-                  
-                  let keys = legend
-                    .selectAll(".key")
-                    .data(data)
-                    .enter()
-                    .append("div")
-                    .attr("class", "key")
-                    .style("display", "flex")
-                    .style("align-items", "center")
-                    .style("margin-right", "20px");
-                  
                   keys
                     .append("div")
                     .attr("class", "symbol")
@@ -622,6 +598,9 @@
                   
                   keys.exit().remove();
                 </script>
+                <div id="Sley">
+                  <img src="img/leg_sur.png" width="170">
+                </div>
               </div>
             </ul>
         </details>
@@ -633,8 +612,8 @@
               <div>
                 <div id="chart3"></div>
                 <p id="infozonas">Al igual que en la Zona Sur, el análisis de oferta referencial en las cuencas se basa en la información de oferta referencial superficial encontrada en el Balance Nacional del año 1987. De acuerdo a eso, en las regiones de Aysén y Magallanes las ofertas referenciales máximas alcanzan los 3.480 m3/s, lo que equivale al 71% del agua disponible en el país.<br>
-                  <br>
-                <strong> El agua de esta zona es usada, principalmente, para generar agua potable.</strong></p>
+                <br>
+                <strong> El <a style="color:#2e4177" target="_blank" href="html/z_austral.html" ><strong>agua</strong></a> de esta zona es usada, principalmente, para generar agua potable.</strong></p>
                 <script id="#graph">
                   var data = [
                   { name: "Agricultura", value: 2.9 },
@@ -644,8 +623,8 @@
                   ];
                   var text = "";
                   
-                  var width = 200;
-                  var height = 200;
+                  var width = 150;
+                  var height = 150;
                   var thickness = 40;
                   var duration = 750;
                   var padding = 10;
@@ -748,22 +727,6 @@
                       this._current = i;
                     });
                   
-                  let legend = d3
-                    .select("#chart3")
-                    .append("div")
-                    .attr("class", "legend")
-                    .style("margin-top", "30px");
-                  
-                  let keys = legend
-                    .selectAll(".key")
-                    .data(data)
-                    .enter()
-                    .append("div")
-                    .attr("class", "key")
-                    .style("display", "flex")
-                    .style("align-items", "center")
-                    .style("margin-right", "20px");
-                  
                   keys
                     .append("div")
                     .attr("class", "symbol")
@@ -779,6 +742,9 @@
                   
                   keys.exit().remove();
                 </script>
+                <div id="Aley">
+                  <img src="img/leg_aus.png" width="150">
+                </div>
               </div>
             </ul>
         </details>
